@@ -311,7 +311,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  		rtl_enable_rxdvgate(tp);
  		fsleep(2000);
  		break;
-@@ -4215,8 +4273,7 @@ static unsigned int rtl_quirk_packet_pad
+@@ -4221,8 +4279,7 @@ static unsigned int rtl_quirk_packet_pad
  
  	switch (tp->mac_version) {
  	case RTL_GIGA_MAC_VER_34:
@@ -321,7 +321,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  		padto = max_t(unsigned int, padto, ETH_ZLEN);
  		break;
  	default:
-@@ -5250,7 +5307,7 @@ static void rtl_hw_initialize(struct rtl
+@@ -5256,7 +5313,7 @@ static void rtl_hw_initialize(struct rtl
  	case RTL_GIGA_MAC_VER_40 ... RTL_GIGA_MAC_VER_48:
  		rtl_hw_init_8168g(tp);
  		break;

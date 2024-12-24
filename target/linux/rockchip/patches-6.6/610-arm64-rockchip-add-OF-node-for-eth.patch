@@ -82,7 +82,7 @@ Signed-off-by: David Bauer <mail@david-bauer.net>
 +};
 --- a/arch/arm64/boot/dts/rockchip/rk3399-nanopi-r4s.dts
 +++ b/arch/arm64/boot/dts/rockchip/rk3399-nanopi-r4s.dts
-@@ -76,6 +76,19 @@
+@@ -83,6 +83,19 @@
  	max-link-speed = <1>;
  	num-lanes = <1>;
  	vpcie3v3-supply = <&vcc3v3_sys>;
@@ -102,7 +102,6 @@ Signed-off-by: David Bauer <mail@david-bauer.net>
  };
  
  &pinctrl {
-
 --- a/arch/arm64/boot/dts/rockchip/rk3568-fastrhino-r66s.dtsi
 +++ b/arch/arm64/boot/dts/rockchip/rk3568-fastrhino-r66s.dtsi
 @@ -363,6 +363,19 @@
@@ -196,7 +195,7 @@ Signed-off-by: David Bauer <mail@david-bauer.net>
  	max-frequency = <200000000>;
 --- a/arch/arm64/boot/dts/rockchip/rk3568-nanopi-r5c.dts
 +++ b/arch/arm64/boot/dts/rockchip/rk3568-nanopi-r5c.dts
-@@ -70,6 +70,20 @@
+@@ -72,6 +72,20 @@
  	reset-gpios = <&gpio0 RK_PA0 GPIO_ACTIVE_HIGH>;
  	vpcie3v3-supply = <&vcc3v3_pcie>;
  	status = "okay";
@@ -217,7 +216,7 @@ Signed-off-by: David Bauer <mail@david-bauer.net>
  };
  
  &pcie3x2 {
-@@ -77,6 +90,20 @@
+@@ -79,6 +93,20 @@
  	reset-gpios = <&gpio0 RK_PB6 GPIO_ACTIVE_HIGH>;
  	vpcie3v3-supply = <&vcc3v3_pcie>;
  	status = "okay";
@@ -240,7 +239,7 @@ Signed-off-by: David Bauer <mail@david-bauer.net>
  &pinctrl {
 --- a/arch/arm64/boot/dts/rockchip/rk3568-nanopi-r5s.dts
 +++ b/arch/arm64/boot/dts/rockchip/rk3568-nanopi-r5s.dts
-@@ -79,6 +79,7 @@
+@@ -76,6 +76,7 @@
  		reg = <1>;
  		pinctrl-0 = <&eth_phy0_reset_pin>;
  		pinctrl-names = "default";
@@ -248,7 +247,7 @@ Signed-off-by: David Bauer <mail@david-bauer.net>
  	};
  };
  
-@@ -86,6 +87,19 @@
+@@ -83,6 +84,19 @@
  	num-lanes = <1>;
  	reset-gpios = <&gpio0 RK_PB6 GPIO_ACTIVE_HIGH>;
  	status = "okay";
@@ -268,7 +267,7 @@ Signed-off-by: David Bauer <mail@david-bauer.net>
  };
  
  &pcie30phy {
-@@ -98,6 +112,19 @@
+@@ -95,6 +109,19 @@
  	reset-gpios = <&gpio0 RK_PA0 GPIO_ACTIVE_HIGH>;
  	vpcie3v3-supply = <&vcc3v3_pcie>;
  	status = "okay";
